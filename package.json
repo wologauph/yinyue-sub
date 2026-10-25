@@ -66,7 +66,6 @@
     "check:open-source": "node scripts/check-open-source.mjs",
     "check:history": "node scripts/check-git-history.mjs",
     "release:prepare": "node scripts/prepare-release.mjs",
-    "cf": "cf",
     "check:release": "pnpm run check && pnpm run check:tests && pnpm run check:agent && pnpm run check:installer && pnpm run check:deploy-experience && pnpm run check:module-format && pnpm run check:worker-contract && pnpm run check:docs && pnpm run check:deploy-config && pnpm run check:deploy-config -- wrangler.jsonc && pnpm run check:audit && pnpm run check:runtime && pnpm run check:scripts && pnpm run check:open-source && pnpm run check:history -- main"
   },
   "cloudflare": {
@@ -81,8 +80,5 @@
         "description": "Required long random token for `/download/*`. It must differ from the admin token; never keep a public placeholder."
       }
     }
-  },
-  "devDependencies": {
-    "cf": "1.0.0-beta.14"
   }
 }
