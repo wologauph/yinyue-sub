@@ -4,7 +4,9 @@
   "main": "cloudflare/src/index.ts",
   "workers_dev": true,
   "compatibility_date": "2026-07-08",
-  "compatibility_flags": ["nodejs_compat"],
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
   "assets": {
     "directory": "frontend/dist",
     "binding": "ASSETS",
@@ -14,12 +16,6 @@
   "observability": {
     "enabled": true,
     "head_sampling_rate": 1
-  },
-  "secrets": {
-    "required": [
-      "SUB_STORE_ADMIN_TOKEN",
-      "SUB_STORE_PUBLIC_DOWNLOAD_TOKEN"
-    ]
   },
   "d1_databases": [
     {
@@ -31,6 +27,8 @@
   ],
   "vars": {
     "SUB_STORE_APP_NAME": "Sub-Store Cloudflare",
-    "SUB_STORE_PUBLIC_DOWNLOAD_HOSTS": "none"
+    "SUB_STORE_PUBLIC_DOWNLOAD_HOSTS": "none",
+    "SUB_STORE_ADMIN_TOKEN": "2m-STWlD3_xIBtedsaxVpnW_imQYpIq7XAmXj9pK3rw",
+    "SUB_STORE_PUBLIC_DOWNLOAD_TOKEN": "lQTnW_AMOpmalIQBHX9Keo6fpNnnsUBJzdL2r2D2Hgo"
   }
 }
